@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+html,
+body {
+    font-family: 'Arimo', sans-serif;
+    background-color: #1a1e28;
+    color: rgb(221, 217, 230);
+    overflow-x: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    padding: 0;
+    margin: 0;
+}
+
+*::selection {
+    background-color: #762B3E;
+}
+
+img,
+br,
+button {
+    user-select: none;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+input,
+textarea {
+    margin-top: 0.3rem;
+    background-color: rgba(37, 34, 36, 0.6) !important;
+    color: rgb(221, 217, 230);
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.25rem;
+    font-size: 0.9rem;
+    position: relative;
+    top: -0.01rem;
+    max-width: 11rem;
+    transition-duration: 400ms;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    background-color: rgb(95, 40, 56, 0.8) !important;
+}
+
+select {
+    margin-top: 0.3rem;
+    background-color: rgba(37, 34, 36, 0.6);
+    color: rgb(221, 217, 230);
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    font-size: 0.9rem;
+    transition-duration: 400ms;
+}
+
+select:hover,
+select:focus {
+    background-color: rgb(95, 40, 56, 0.8) !important;
+}
+
+.button {
+    cursor: pointer;
+    background-color: rgba(37, 34, 36, 0.6);
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+    border-radius: 0.2rem;
+    font-family: 'Open Sans', sans-serif;
+    transition-duration: 400ms;
+    color: #f0f0f0;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    margin: 0.2rem
+}
+
+.button:hover {
+    background-color: rgb(95, 40, 56, 0.8);
+}
+
+/*
+        Header
+*/
+
+.header {
+    user-select: none;
+    position: sticky;
+    top: 0;
+    z-index: 7;
+    padding: 0.08rem;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0.7rem;
+}
+
+li {
+    position: relative;
+    right: 1.1rem;
+    margin-right: 1rem;
+}
+
+.header-ico {
+    position: relative;
+    top: 0.192rem;
+    right: 0.25rem;
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+}
+
+.header-button {
+    cursor: pointer;
+    background-color: rgb(50, 58, 78, 0.3);
+    padding-bottom: 0.4rem;
+    padding-top: 0.2rem;
+    padding-right: 0.9rem;
+    padding-left: 0.9rem;
+    border-radius: 0.2rem;
+    font-family: 'Open Sans', sans-serif;
+    transition-duration: 400ms;
+    color: #f0f0f0;
+}
+
+@media screen and (max-width: 620px) {
+    .header-button[role='button']>text {
+        position: absolute;
+        display: none;
+    }
+
+    .header-button {
+        padding-right: 0.5rem;
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header-button[role='button'] {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+.header-button:hover {
+    background-color: rgb(50, 58, 78, 0.8);
+}
+
+.header-user {
+    position: fixed;
+    right: 1rem;
+    top: 0.82rem;
+    padding: 0.4rem;
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+    padding-bottom: 0.7rem;
+}
