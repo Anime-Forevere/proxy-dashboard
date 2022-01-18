@@ -1,7 +1,7 @@
 const dev = true;
 
 module.exports = {
-    dev: dev,
+    dev,
     api: dev ? `http://localhost:3029` : `https://api.waya.one`,
     token: ``,
     site: {
